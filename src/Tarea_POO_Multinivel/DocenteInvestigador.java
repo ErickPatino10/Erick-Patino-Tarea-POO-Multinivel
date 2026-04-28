@@ -42,6 +42,6 @@ public class DocenteInvestigador extends Docente{
         super.mostrarDatos();
         System.out.println("Valor horas: "+getValorHora());
         System.out.println("Horas de clase: " + getHorasClases());
-        System.out.println("Publicaciones: " + publicaciones);
+        System.out.println("Publicaciones: " + getPublicaciones());
     }
 }

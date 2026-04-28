@@ -48,9 +48,9 @@ public class PersonaAcademica {
     }
 
     public void mostrarDatos(){
-        System.out.println("Codigo: "+codigo);
-        System.out.println("Nombre: "+nombre);
-        System.out.println("Edad: "+edad);
+        System.out.println("Codigo: "+getCodigo());
+        System.out.println("Nombre: "+getNombre());
+        System.out.println("Edad: "+getEdad());
     }
 
     public void describirRol(){};
