@@ -9,14 +9,14 @@ public class BecadoExcelencia extends EstudianteBecado{
         this.bonoExcelencia = bonoExcelencia;
     }
 
+
     @Override
     public double calcularPagoFinal() {
         double pago = super.calcularPagoFinal() - bonoExcelencia;
-
         if (pago < 0) {
             return 0;
         }
-
         return pago;
     }
+
 }

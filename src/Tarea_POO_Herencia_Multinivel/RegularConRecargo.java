@@ -12,7 +12,8 @@ public class RegularConRecargo extends EstudianteRegular{
     public void setRecargoPendiente(double recargoPendiente) {
         if (recargoPendiente >= 0) {
             this.recargoPendiente = recargoPendiente;
-        }
+        }else
+            System.out.println("Recargo invalido");
     }
 
     @Override

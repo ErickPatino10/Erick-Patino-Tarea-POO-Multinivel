@@ -29,12 +29,11 @@ public class Main {
         System.out.print("Bono excelencia: ");
         double bono = sc.nextDouble();
 
-        // 🔥 OBJETO INICIALIZADO CON CONSTRUCTOR
         Estudiante e1 = new BecadoExcelencia(codigo, nombre, promedio, matricula, beca, bono);
         lista.add(e1);
 
 
-        sc.nextLine(); // limpiar buffer
+        sc.nextLine();
 
         System.out.println("\n=== INGRESO REGULAR CON RECARGO ===");
 
@@ -56,16 +55,16 @@ public class Main {
         System.out.print("Recargo pendiente: ");
         double recargo = sc.nextDouble();
 
-        // 🔥 OTRO OBJETO CONSTRUCTOR
+
         Estudiante e2 = new RegularConRecargo(codigo, nombre, promedio, matricula, materias, recargo);
         lista.add(e2);
 
 
-        // 🔥 POLIMORFISMO
         System.out.println("\n=== RESULTADOS ===");
         for (Estudiante e : lista) {
             e.mostrarDatos();
             System.out.println("Pago final: $" + e.calcularPagoFinal());
+            System.out.println("Pago con descuento extra: $" + e.calcularPagoFinal(10));
             System.out.println("----------------------");
         }
 

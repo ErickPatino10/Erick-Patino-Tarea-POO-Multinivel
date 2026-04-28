@@ -12,7 +12,8 @@ public class EstudianteBecado extends Estudiante {
     public void setPorcentajeBeca(double porcentajeBeca) {
         if (porcentajeBeca >= 0 && porcentajeBeca <= 100) {
             this.porcentajeBecas = porcentajeBeca;
-        }
+        }else
+            System.out.println("Porcentaje de veca invalido");
     }
 
     public double getPorcentajeBeca() {
